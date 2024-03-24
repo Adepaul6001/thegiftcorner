@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-1 img{
+    width: 120px;
+    height: 80px;  
+}
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 65px;
+    align-items: center;
+    padding: 3px 10%;
+}
+header ul li {
+    color: black;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    transition: all .6s ease-in-out;
+    color: #00005e;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+                                                
+}
+li:hover a{
+    color: #fd01ae;
+}
+.hero-container{
+    background-color: #f3f1ed;
+    min-height: 100vh;
+    border-radius: 24% 24% 69% 31% / 0% 0% 100% 24%;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 70px;
+}
+h1{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 65px;                                                                                        
+}
+.hero p{                                       
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;                                             
+}
+.hero img{
+    width: 500px;
+}
+.hero .stn_1 a{
+    text-decoration: none;
+    color: white;
+}
+.stn_1{
+    width: 180px;
+    height: 40px;
+    background-color:#00005e;
+    padding: 8px 19px;
+    border: 0.2px solid white;
+    color: white;
+    font-size: 15px;
+    transition: all .4s ease-out;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.stn_1::after{
+    content: '';
+    width: 175px;
+    height: 35px;
+    right:-6px;
+    bottom:-6px;
+    position: absolute;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;    
+}
+.gifts{
+    display: flex;
+    gap: 200px;
+    padding-top: 80px;
+}
+.services{
+    height: 600px;
+    width:500px;
+    background-image: url(./images/pexels-monstera-production-5876688.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 200px;
+    
+}
+.service-1 h2{
+   text-align: center;
+   font-family: 'League Spartan', sans-serif;
+   font-size: 35px;
+   margin-top:120px;
+}
+.service-1 p{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.service-grid{
+    display: grid;
+    grid-template-rows: repeat(2,300px);
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-right: 15px;
+}
+.service-1 .stn_1 a{
+    text-decoration: none;
+    color: white; 
+}
+.new{
+    margin-right: 40px;
+}
+
+.gift-category{
+    width: 300px;
+    position: relative;
+    cursor: pointer;  
+}
+.gift-category::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.cat-1{
+    background-image:url(./images/pexels-any-lane-5727922.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 50px;
+    box-shadow: -20px -18px 34px -34px rgba(0,0,0,0.75);
+}
+.cat-1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 50px;
+}
+.cat-2{
+    background-image: url(./images/pexels-liza-summer-6347666.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 50px;
+    box-shadow: 10px -1px 22px -12px rgba(0,0,0,0.75);
+}
+.cat-2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 50px;
+}
+.cat-3{
+    background-image:url(./images/pexels-tim-douglas-6567434.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 50px;
+    box-shadow: -20px -18px 34px -34px rgba(0,0,0,0.75);
+}
+.cat-3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 50px;
+}
+.cat-4{
+    background-image: url(./images/pexels-tim-douglas-6567276.jpg);
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 50px;
+    box-shadow: 10px -1px 22px -12px rgba(0,0,0,0.75);
+}
+.cat-4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom-right-radius: 50px;
+}
+.dabby{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    padding-bottom: 8px;
+    width: 80%;
+    border-bottom: 1px solid white;
+}
+.dabby h4{
+    color: white; 
+    transition: all .5s ease-in-out;
+    font-family: 'League Spartan', sans-serif;
+}
+.dabby p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    opacity: 0;
+    padding-left: 10px;
+    transition: all .5s ease-in-out;
+}
+.dabby:hover p{ 
+    opacity: 1;
+}
+.dabby:hover h4{
+    opacity: 0;
+}
+.about-1{
+    background-image: url(./images/Screenshot\ \(2\)\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+.about-1 div{
+    min-height: 600px;
+    width: 800px;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 10px -1px 22px -12px rgba(0,0,0,0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-1 div img{
+    width: 150px;
+    height: 110px; 
+}
+.about-1  p{
+    padding-inline:80px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+.Reviews h3{
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 30px;
+}
+.Reviews p{
+    padding: 40px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+#customerReview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 25px 0;
+}
+#customerReview div{
+    width: 330px;
+    height: 252px;
+    border-radius: 20px;
+    box-shadow: 10px -1px 22px -12px rgba(0,0,0,0.75);
+}
+.Touch-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 50px;
+}
+.Touch-container h2{
+    font-size: 30px;
+}
+.small-contact{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 8px;
+}
+.little{
+    display: flex;
+    gap: 9px;
+}
+.little h6{
+    font-size: 15px;
+}
+.ill_ img{
+    width: 300px;
+    height: 300px;
+}
+.contact{
+    padding: 30px 0;
+}
+.footer-1{
+    border-radius: 56% 36% 25% 25% / 46% 29% 1% 0%;
+    background-color: #f3f1ed;
+    
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px;
+}
+.svg-flex{
+    display: flex;
+    gap: 18px;
+    cursor: pointer;
+} 
+.footer-container img{
+    width: 150px;
+    height: 110px; 
+}
+.footer-container div ul li{
+    list-style: none;
+    padding-bottom: 5px;
+    color: black;
+}
+/* media query */
+@media (max-width:600px){
+    header ul{
+        padding: 3px 5%;
+        gap: 12px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 15px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .service-grid{
+        display: block;
+        padding-left: 40px;
+    }
+    .gift-category{
+        min-height: 300px;
+    }
+    .Touch-container{
+        flex-direction: column-reverse;
+    }
+    .footer-container{
+        display: block; 
+    }
+    .footer-container .box{
+        padding-bottom: 15px;
+    }
+    .service-1 p{
+        padding-inline: 15px;
+    }
+    .Reviews h3{
+        padding-inline: 15px;
+    }
+    .about-1 div{
+        min-height: 300px;
+    }
+    .about-1 p{
+        padding-inline: 50px;
+    }
+    .gift-category{
+        margin-bottom: 50px;
+    }
+    section{
+        padding: 15px;
+    }
+    #heroimg{
+        width: 350px;
+        margin-left: 10px;
+    }
+    .about-1  p{
+        padding-inline:20px;
+    }
+    .service-1 h2{
+       margin-top: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .services{
+        display: none;
+    }
+    .gifts{
+        display: flex;
+        justify-content: center;
+    }
+}
